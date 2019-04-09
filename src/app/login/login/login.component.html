@@ -1,8 +1,10 @@
-<div *ngIf="user" class="card text-center">
-  <app-user-details [user]=user></app-user-details>
-  <app-sign-out></app-sign-out>
-</div>
+<section class="login">
+  <div *ngIf="user" class="card text-center">
+    <app-user-details [user]=user></app-user-details>
+    <app-sign-out></app-sign-out>
+  </div>
 
-<div *ngIf="!user" class="card text-center">
-  <app-sign-in></app-sign-in>
-</div>
+  <div *ngIf="!user" class="card text-center">
+    <app-sign-in></app-sign-in>
+  </div>
+</section>
